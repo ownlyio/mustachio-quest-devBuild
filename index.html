@@ -58,11 +58,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Builds.loader.js";
+      var loaderUrl = buildUrl + "/MQ Test Build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Builds.data.gz",
-        frameworkUrl: buildUrl + "/Builds.framework.js.gz",
-        codeUrl: buildUrl + "/Builds.wasm.gz",
+        dataUrl: buildUrl + "/MQ Test Build.data",
+        frameworkUrl: buildUrl + "/MQ Test Build.framework.js",
+        codeUrl: buildUrl + "/MQ Test Build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Mustachio Quest",
@@ -84,10 +84,10 @@
         config.devicePixelRatio = 1;
         unityShowBanner('WebGL builds are not supported on mobile devices.');
       } 
-      else {
-        canvas.style.width = "1020px";
-        canvas.style.height = "574px";
-      }
+      //else {
+        //canvas.style.width = "1020px";
+        //canvas.style.height = "574px";
+      //}
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
