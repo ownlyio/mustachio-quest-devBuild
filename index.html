@@ -6,19 +6,10 @@
     <title>Unity WebGL Player | Mustachio Quest</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8SSGDXK4SD"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-8SSGDXK4SD');
-    </script>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <!--canvas id="unity-canvas" width=1020 height=574></canvas>-->
+      <!-- <canvas id="unity-canvas" width=1020 height=574></canvas> -->
       <canvas id="unity-canvas"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
@@ -27,7 +18,7 @@
         </div>
       </div>
       <div id="unity-warning"> </div>
-      <!--<div id="unity-footer">
+      <!-- <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">Mustachio Quest</div>
@@ -101,11 +92,10 @@
         // and default/override low DPI mode on mobile browsers.
         config.devicePixelRatio = 1;
         unityShowBanner('WebGL builds are not supported on mobile devices.');
-      } 
-      //else {
+      } else {
         //canvas.style.width = "1020px";
         //canvas.style.height = "574px";
-      //}
+      }
       loadingBar.style.display = "block";
 
       var script = document.createElement("script");
@@ -116,7 +106,7 @@
         }).then((unityInstance) => {
           loadingBar.style.display = "none";
           //fullscreenButton.onclick = () => {
-            //unityInstance.SetFullscreen(1);
+          //  unityInstance.SetFullscreen(1);
           //};
         }).catch((message) => {
           alert(message);

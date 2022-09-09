@@ -18,8 +18,8 @@ Used to set the network: https://chainlist.org/
 62320 Celo Baklava Testnet
 1666700000 Harmony Testnet Shard0
 1666600000 Harmony Mainnet Shard0
+25 Cronos Mainnet Beta
+338 Cronos Testnet
 */
 
-//window.web3ChainId = 1;
 window.web3ChainId = 56;
-//window.web3ChainId = 97;
